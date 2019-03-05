@@ -5,6 +5,10 @@
     &__background {
         padding: 90px 0;
         background-color: #262b2e;
+
+        @include mq(tablet, max) {
+            padding: 50px 0;
+        }
     }
 
     &__box {

@@ -3,9 +3,17 @@
 .team-say {
 
     &__background {
-        padding: 120px 0 120px;
+        padding: 120px 0;
         position: relative;
         background-color: $color-gray-light;
+
+        @include mq(tablet-wide, max) {
+            padding: 70px 0;
+         } 
+
+        @include mq(phone-landscape, max) {
+            padding: 50px 0;
+        }
     }
 
     &__title {
@@ -19,19 +27,87 @@
     }
 
     &__slider {
-        text-align: center;
-        background-image: url('../img/feedback-background.jpg');
-        background-position: 50% 22%;
-        background-repeat: no-repeat;
+
+        ul {
+            padding-left: 220px;
+            justify-content: flex-start;
+
+            @include mq(tablet, max) {
+                padding: 0;
+                justify-content: center;
+            } 
+        }
     }
 
 }
 
-.comment {
+.slider {
+
+    &__element {
+        display: flex !important;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+
+        @include mq(phone, max) {
+            flex-direction: column;
+        }
+    }
+
+    &__img {
+        width: 42%;
+        text-align: center;
+        background-image: url('../img/feedback-background.jpg');
+        background-position: 50% 30%;
+        background-repeat: no-repeat;
+
+        @include mq(phone-landscape, max) {
+            height: 100%;
+            background: none;
+        }
+
+        @include mq(phone, max) {
+            width: 100%;
+        }
+    }
+
     &__box {
-        margin-top: 25px;
+        width: 58%;
+        padding: 28px 0 40px 40px;
+
+        @include mq(tablet-wide, max) {
+            padding: 28px 0 40px 40px;
+        }
+
+        @include mq(phone-landscape, max) {
+            padding: 0;
+            height: 100%;
+        }
+
+        @include mq(tablet, max) {
+            padding: 0 50px;
+        } 
+        
+        @include mq(phone, max) {
+            padding:0 0 10px 0;
+            width: 100%;
+        }
+    }
+
+    &__comment {
         padding: 95px 75px 70px 85px;
         background-color: $color-gray;
+
+        @include mq(tablet-wide, max) {
+            padding: 75px 50px 90px;
+        }
+
+        @include mq(tablet, max) {
+            padding: 40px 25px 45px;
+        } 
+
+        @include mq(phone, max) {
+            padding: 20px;
+        }
     }
 
     &__title {
@@ -50,6 +126,84 @@
         margin-bottom: 30px;
         text-align: center;
         opacity: 0.7;
+    }
+}
+
+.team-say-slide {
+    margin: 0 auto;
+    margin-bottom: 45px;
+    box-shadow: 2px 6px 24px 0px rgba(0, 0, 0, 0.17);
+}
+
+.slick-arrow {
+    margin: 0;
+    padding-top: 3px;
+    width: 55px;
+    height: 55px;
+    position: absolute;
+    bottom: 14%;
+    z-index: 10;
+    font-size: 35px;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    border: none;
+    background-color: $color-white;
+    color: #b2b2b2;
+
+    &:hover {
+        background-color: $color-mint;
+        color: #25514d;  
+    }
+
+    @include mq(tablet-wide, max) {
+        bottom: 10%;
+    } 
+
+    @include mq(phone-landscape, max) {
+        display: none;
+    } 
+
+    @include mq(tablet, max) {
+        display: none;
+    } 
+
+}
+
+.slick-arrow:active {
+    background-color: $color-mint;
+    color: #25514d; 
+}
+
+.left-arrow {
+    right: 19%;
+
+    @include mq(desktop-wide, max) {
+        right: 15%;
+    }
+    
+    @include mq(desktop, max) {
+        right: 10%;
+    }
+
+    @include mq(tablet-wide, max) {
+        right: 13%;
+    }
+}
+
+.right-arrow {
+    right: 13.5%;
+
+    @include mq(desktop-wide, max) {
+        right: 9.5%;
+    }
+
+    @include mq(desktop, max) {
+        right: 4%;
+    }
+
+    @include mq(tablet-wide, max) {
+        right: 5%;
     }
 }
 

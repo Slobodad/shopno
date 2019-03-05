@@ -8,6 +8,22 @@
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
+
+        @include mq(tablet-wide, max) {
+            padding: 70px 0;
+         } 
+
+         @include mq(phone-landscape, max) {
+            padding: 50px 0;
+        }
+    }
+
+    &__container {
+
+        @include mq(tablet, max) {
+            order: 1;
+        }
+        
     }
 
     &__box {

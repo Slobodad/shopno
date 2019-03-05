@@ -23,3 +23,7 @@ $breakpoints: (
         }
     }
 }
+
+@include mq(tablet, max) {
+
+}

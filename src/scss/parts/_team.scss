@@ -4,6 +4,14 @@
 
     &__background {
         padding: 120px 0;
+
+        @include mq(tablet-wide, max) {
+           padding: 70px 0;
+        } 
+
+        @include mq(phone-landscape, max) {
+            padding: 50px 0;
+        }
     }
 
     &__title {
@@ -16,11 +24,17 @@
         text-transform: uppercase;
         opacity: 0.62;
     }
+
+    &__row {
+        flex-wrap: wrap;
+    }
 }
 
 .card {
 
     &__unit {
+        display: flex;
+        justify-content: center;
         margin-bottom: 30px;
 
         &:hover .card__element {
@@ -34,11 +48,6 @@
         position: relative;
     }
 
-    &__img {
-        position: relative;
-
-    }
-
     &__element {
         padding: 25px 50px 0;
         position: absolute;
@@ -50,12 +59,69 @@
         background-repeat: no-repeat;
         background-position: center;
         background-size: contain;
+
+        @include mq(tablet-wide, max) {
+            width: 90%;
+            top: 30%;
+            right: 5%;
+            visibility: visible;
+            opacity: 1;
+        }
+
+        @include mq(tablet, max) {
+            padding: 50px;
+            width: 80%;
+            top: 27%;
+            right: 10%;
+            visibility: visible;
+            opacity: 1;
+        }
+
+        @include mq(phone-landscape, max) {
+            padding: 50px;
+            width: 80%;
+            top: 27%;
+            right: 10%;
+            visibility: visible;
+            opacity: 1;
+        }
+
+        @include mq(phone-landscape-min, max) {
+            padding: 50px;
+            width: 80%;
+            top: 37%;
+            right: 10%;
+            visibility: visible;
+            opacity: 1;
+        }
+
+        @include mq(tablet-small, max) {
+            padding: 50px;
+            width: 80%;
+            top: 38%;
+            right: 10%;
+            visibility: visible;
+            opacity: 1;
+        }
+
+        @include mq(phone, max) {
+            padding: 40px;
+            width: 90%;
+            top: 34%;
+            right: 5%;
+            visibility: visible;
+            opacity: 1;
+        }
     }
 
     &__title {
         margin-bottom: 25px;
         padding-top: 20px;
         opacity: 0.95;
+
+        @include mq(tablet-wide, max) {
+            margin-bottom: 15px;
+        }
     }
 
     &__title--latina {
@@ -67,6 +133,10 @@
     &__description {
         margin-bottom: 35px;
         opacity: 0.8;
+
+        @include mq(tablet-wide, max) {
+            margin-bottom: 10px;
+        }
     }
 
     &__list {

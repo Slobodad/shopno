@@ -5,6 +5,14 @@
     &__background {
         padding: 125px 0 150px;
         background-color: $color-gray-light;
+
+        @include mq(tablet-wide, max) {
+            padding: 70px 0;
+         } 
+
+        @include mq(phone-landscape, max) {
+            padding: 50px 0;
+        }
     }
 
     &__title {
@@ -16,13 +24,30 @@
         text-align: center;
         text-transform: uppercase;
         opacity: 0.62;
+
+        @include mq(tablet, max) {
+            margin-bottom: 60px;
+        }
+
+        @include mq(phone-landscape, max) {
+            margin-bottom: 30px;
+        }
     }
 
     &__slider {
         text-align: center;
         background-image: url('../img/about-background.jpg');
-        background-position: 50% 45%;
+        background-position: 50% 40%;
         background-repeat: no-repeat;
+
+        @include mq(tablet, max) {
+            background-position: 50% 12%;
+            background-size: contain;
+        }
+
+        @include mq(phone-landscape, max) {
+            background-position: 50% 35%;
+        }
     }
 }
 
@@ -30,6 +55,10 @@
 
     &__box{
         padding: 20px 85px 0 40px;
+
+        @include mq(tablet, max) {
+            padding: 20px 10px 0 40px;
+        }
     }
 
     &__title {
@@ -40,6 +69,13 @@
     &__text {
         margin-bottom: 45px;
         opacity: 0.74;
+
+        &:last-child {
+
+            @include mq(tablet, max) {
+                margin-bottom: 0;
+            }
+        }
     }
 
     &____subtitle {

@@ -29,11 +29,20 @@ h1,h2,h3,h4,h5,h6 {
     font-size: 45px;
     letter-spacing: 0.001;
     text-transform: uppercase;
+
+    @include mq(phone-landscape, max) {
+        font-size: 25px;
+    }
+
 }
 
 h2 {
     font-size: 38px;
     opacity: 0.9;
+
+    @include mq(phone-landscape, max) {
+        font-size: 25px;
+    }
 }
 
 h3,h4 {
