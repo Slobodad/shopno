@@ -206,59 +206,19 @@
         right: 5%;
     }
 }
-
-.rating-1 {
+.raiting {
     display: flex;
     justify-content: center;
-
+    &__btn {
+        border: none;
+        background: transparent;   
+        outline: none !important; 
+    }
     &__star {
         margin-right: 5px;
         color: #56605f;
-    }
-
-    &__star--active {
-        color: $color-gold;
-    }
-}
-
-.rating-2 {
-    display: flex;
-    justify-content: center;
-
-    &__star {
-        margin-right: 5px;
-        color: #56605f;
-    }
-
-    &__star--active {
-        color: $color-gold;
-    }
-}
-
-.rating-3 {
-    display: flex;
-    justify-content: center;
-
-    &__star {
-        margin-right: 5px;
-        color: #56605f;
-    }
-
-    &__star--active {
-        color: $color-gold;
-    }
-}
-
-.rating-4 {
-    display: flex;
-    justify-content: center;
-
-    &__star {
-        margin-right: 5px;
-        color: #56605f;
-    }
-
-    &__star--active {
-        color: $color-gold;
+        &--active {
+            color: $color-gold;
+        }
     }
 }
