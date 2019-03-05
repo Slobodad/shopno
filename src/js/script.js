@@ -213,21 +213,19 @@ $(document).ready(function(){
 
     $('.js-blog-close').on('click', function(){
         $(this).closest('div').removeClass('blog__popup--is-active');
-    });
-
-    // Google map
-
-    var map;
-    var mapConteiner = $('#map')[0];
-    var mapCenter = {lat: 51.4904732, lng: 31.3050769};
-    
-    function initMap() {
-      map = new google.maps.Map(mapConteiner, {
-          center: mapCenter,
-          zoom: 15,
-          disableDefaultUI: true
-      });
-    }
-
-    initMap();
+    });  
 });
+
+// Google map
+
+var map;
+var mapConteiner = $('#map')[0];
+var mapCenter = {lat: 51.4904732, lng: 31.3050769};
+
+function initMap() {
+  map = new google.maps.Map(mapConteiner, {
+      center: mapCenter,
+      zoom: 15,
+      disableDefaultUI: true
+  });
+}
