@@ -1,0 +1,45 @@
+// Works
+
+.works {
+
+    &__background {
+        padding: 125px 0;
+    }
+
+    &__title {
+        text-align: center;
+    }
+
+    &__text {
+        margin-bottom: 120px;
+        text-align: center;
+        text-transform: uppercase;
+        opacity: 0.62;
+    }
+
+    &__img-box {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        // :nth-child(3) {
+        //     margin-right: 0;
+        // }
+
+        // :last-child {
+        // margin-right: 0;
+    }
+    
+    &__img {
+        margin-bottom: 15px;
+        max-width: 32.5%;
+    }
+
+    &__img:nth-child(3) {
+        margin-right: 0;
+    }
+
+    &__img:last-child {
+        margin-right: 0;
+    }
+}

@@ -1,0 +1,110 @@
+// Team-say
+
+.team-say {
+
+    &__background {
+        padding: 120px 0 120px;
+        position: relative;
+        background-color: $color-gray-light;
+    }
+
+    &__title {
+        text-align: center;
+    }
+
+    &__text {
+        text-align: center;
+        text-transform: uppercase;
+        opacity: 0.62;
+    }
+
+    &__slider {
+        text-align: center;
+        background-image: url('../img/feedback-background.jpg');
+        background-position: 50% 22%;
+        background-repeat: no-repeat;
+    }
+
+}
+
+.comment {
+    &__box {
+        margin-top: 25px;
+        padding: 95px 75px 70px 85px;
+        background-color: $color-gray;
+    }
+
+    &__title {
+        margin-bottom: 30px;
+        text-align: center; 
+    }
+
+    &__title--italic {
+        font-style: italic;
+        font-size: 15px;
+        opacity: 0.95;
+        color: #787878;
+    }
+
+    &__description {
+        margin-bottom: 30px;
+        text-align: center;
+        opacity: 0.7;
+    }
+}
+
+.rating-1 {
+    display: flex;
+    justify-content: center;
+
+    &__star {
+        margin-right: 5px;
+        color: #56605f;
+    }
+
+    &__star--active {
+        color: $color-gold;
+    }
+}
+
+.rating-2 {
+    display: flex;
+    justify-content: center;
+
+    &__star {
+        margin-right: 5px;
+        color: #56605f;
+    }
+
+    &__star--active {
+        color: $color-gold;
+    }
+}
+
+.rating-3 {
+    display: flex;
+    justify-content: center;
+
+    &__star {
+        margin-right: 5px;
+        color: #56605f;
+    }
+
+    &__star--active {
+        color: $color-gold;
+    }
+}
+
+.rating-4 {
+    display: flex;
+    justify-content: center;
+
+    &__star {
+        margin-right: 5px;
+        color: #56605f;
+    }
+
+    &__star--active {
+        color: $color-gold;
+    }
+}

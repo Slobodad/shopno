@@ -1,0 +1,59 @@
+// Footer
+
+.footer {
+
+    &__background {
+        padding: 90px 0;
+        background-color: #262b2e;
+    }
+
+    &__box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__title {
+        margin-bottom: 15px;
+        text-transform: uppercase;
+        opacity: 0.8;
+        color: $color-white
+    }
+
+    &__copywrite {
+        opacity: 0.4;
+        color: $color-white;
+    }
+}
+
+.social {
+
+    &__list {
+        display: flex;
+    }
+
+    &__item {
+        margin-right: 10px;
+        
+
+    }
+
+    &__link {
+        padding-top: 5px;
+        width: 45px;
+        height: 40px;
+        display: block;
+        font-size: 23px;
+        text-align: center;
+        opacity: 0.4;
+        color: $color-white;
+        background-color: #424648;
+        
+
+        &:hover {
+            opacity: 1;
+            color: $color-black;
+            background-color: $color-mint;
+        }
+    }
+}

@@ -1,0 +1,36 @@
+// Home
+
+.home {
+    &__background {
+        padding: 190px 0;
+        position: relative;
+        background-color: $color-gray;
+    }
+
+    &__title {
+        margin-bottom: 150px;
+        text-align: center;
+        text-shadow: 4px 8px 10px rgba(0, 0, 0, 0.24); 
+
+        &--background{
+            background-color: rgba($color: $color-mint, $alpha: 0.5);
+        }
+    }
+
+    &__btn-box {
+        text-align: center;
+    }
+
+    &__btn {
+
+        &:hover {
+            background-color: $color-white;
+        }
+    }
+
+    &__img {
+        position: absolute;
+        right: 108px;
+        bottom: -60px;
+    }
+}

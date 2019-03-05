@@ -1,0 +1,19 @@
+// header
+
+.header {
+    padding-top: 60px;
+
+    &__background {
+        background-color: $color-gray;
+    }
+
+    &__btn-box {
+        padding: 15px 0 10px;
+    }
+
+    &__btn {
+        border: none;
+        background: none;
+
+    }
+}

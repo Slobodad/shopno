@@ -1,0 +1,113 @@
+// Services
+
+.services {
+    &__background {
+        padding: 125px 0;
+        background-color: $color-gray-light;
+    }
+
+    &__title {
+        text-align: center;
+    }
+
+    &__text {
+        margin-bottom: 120px;
+        text-align: center;
+        text-transform: uppercase;
+        opacity: 0.62;
+    }    
+}
+
+.blog {
+
+    &__box {
+        width: 100%;
+        height: 100%;
+    }
+    &__img {
+        margin-bottom: 15px;
+        position: relative;
+    }
+
+    &__element {
+        width: 94%;
+        height: 96%;
+        padding: 105px 85px 45px 55px;
+        position: absolute;
+        top: 0;
+        background-color: $color-black;
+        opacity: 0.6;
+        color: $color-white;
+
+    }
+
+    &__element-big {
+        width: 95.5%;
+    }
+
+    &__popup {   
+        visibility: hidden;
+        opacity: 0; 
+        width: 95.5%;
+        height: 96%;
+        padding: 60px 110px 150px 65px;
+        position: absolute;
+        top: 0;
+        z-index: 10;
+        background-color: $color-mint;
+    }
+
+    &__popup-small {
+        padding: 30px 30px 10px 30px;
+    }
+
+    &__popup--is-active {
+        visibility: visible;
+        opacity: 1;
+        transition: all .5s ease;
+    }
+
+
+    &__title {
+        margin-bottom: 25px;
+        opacity: 0.95;
+    }
+
+    &__title-top {
+        margin-bottom: 40px;
+        opacity: 0.83;
+    }
+
+    &__description {
+        margin-bottom: 60px;
+        opacity: 0.9;
+    }
+
+    &__description-top {
+        opacity: 0.75;
+    }
+
+    &__btn {
+        padding: 0;
+        border: none;
+        opacity: 0.8;
+        color: $color-white;
+
+        &:hover {
+            opacity: 0.3;
+            color: $color-white;
+        }
+    }
+
+    &__btn--is-close {
+        font-size: 40px;
+        border: none;
+        background: none;
+        opacity: 0.4;
+
+    }
+
+    &__arrow {
+        padding-left: 15px;
+    }
+}

@@ -1,0 +1,80 @@
+// Slider
+
+// Slider section about
+
+.about__slide {
+    margin: 0 auto;
+}
+
+.slick-dots {
+    display: flex;
+    justify-content: center;
+
+    li {
+        margin-right: 3px;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: #d0d0d0;
+
+    }
+
+    button {
+        font-size: 0; 
+        border: none;
+        background: transparent;
+        
+    }
+}
+
+.slick-dots li.slick-active {
+    background: $color-mint;
+}
+
+// Slider team-say
+
+.team-say-slide {
+    margin: 0 auto;
+    margin-bottom: 45px;
+    box-shadow: 2px 6px 24px 0px rgba(0, 0, 0, 0.17);
+}
+
+.slick-arrow {
+    margin: 0;
+    padding-top: 3px;
+    width: 55px;
+    height: 55px;
+    position: absolute;
+    bottom: 15%;
+    z-index: 10;
+    font-size: 35px;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    border: none;
+    background-color: $color-white;
+    color: #b2b2b2;
+
+    &:hover {
+        background-color: $color-mint;
+        color: #25514d;  
+    }
+
+}
+
+.slick-arrow:active {
+    background-color: $color-mint;
+    color: #25514d; 
+}
+
+.left-arrow {
+    right: 19%;
+}
+
+.right-arrow {
+    right: 13.5%;
+}
+
+
+
+

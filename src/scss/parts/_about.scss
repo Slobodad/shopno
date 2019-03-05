@@ -1,0 +1,49 @@
+// About
+
+.about {
+
+    &__background {
+        padding: 125px 0 150px;
+        background-color: $color-gray-light;
+    }
+
+    &__title {
+        text-align: center;
+    }
+
+    &__text {
+        margin-bottom: 125px;
+        text-align: center;
+        text-transform: uppercase;
+        opacity: 0.62;
+    }
+
+    &__slider {
+        text-align: center;
+        background-image: url('../img/about-background.jpg');
+        background-position: 50% 45%;
+        background-repeat: no-repeat;
+    }
+}
+
+.description {
+
+    &__box{
+        padding: 20px 85px 0 40px;
+    }
+
+    &__title {
+        margin-bottom: 30px;
+        opacity: 0.75;
+    }
+
+    &__text {
+        margin-bottom: 45px;
+        opacity: 0.74;
+    }
+
+    &____subtitle {
+        margin-bottom: 30px;
+        opacity: 0.75;
+    }
+}
