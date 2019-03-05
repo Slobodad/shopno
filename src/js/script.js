@@ -82,41 +82,41 @@ $(document).ready(function(){
 
   });
 
-  // Raiting
+  // rating
 
   // Click 
   var addClass = function(id, index) {
-    $(id + ' .raiting__star').removeClass('raiting__star--active');
+    $(id + ' .rating__star').removeClass('rating__star--active');
 
     for (var i = 0; i < index; i++) {
-      $(id + ' .raiting__btn').eq(i).children().addClass('raiting__star--active');
+      $(id + ' .rating__btn').eq(i).children().addClass('rating__star--active');
     }
   };
 
-  $('.raiting').click(function(e) {
+  $('.rating').click(function(e) {
     var itemId = '#' + $(this).attr('id');
     var rateIndex = e.target.closest('button').dataset.rate;
 
-    $(itemId + ' .raiting__btn').removeClass('js-active');
+    $(itemId + ' .rating__btn').removeClass('js-active');
  
     for (var i = 0; i < rateIndex; i++) {
-      $(itemId + ' .raiting__btn').eq(i).addClass('js-active');
+      $(itemId + ' .rating__btn').eq(i).addClass('js-active');
     }
 
     addClass(itemId, rateIndex);
   });
 
   // Hover
-  $('.raiting__btn').mouseover(function(e) {
+  $('.rating__btn').mouseover(function(e) {
     var slideId = '#' + $(this).parent('div').attr('id'); 
     var rateIndex = $(this).data('rate');
 
     addClass(slideId, rateIndex);
   });
 
-  $('.raiting__btn').mouseleave(function(e) {
+  $('.rating__btn').mouseleave(function(e) {
     var slideId = '#' + $(this).parent('div').attr('id'); 
-    var items = $(slideId + ' .raiting__btn');
+    var items = $(slideId + ' .rating__btn');
     var activeItems = 0;
     
     for (var i = 0; i < items.length; i++) {
