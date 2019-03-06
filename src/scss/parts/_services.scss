@@ -103,6 +103,15 @@
             padding: 50px 85px 45px 55px;
         }
         
+        @include mq(phablet, max) {
+            padding: 20px;
+            overflow: scroll;
+        }
+
+        @include mq(phone, max) {
+            padding: 10px;
+            overflow: scroll;
+        }
     }
 
     &__popup-small {
@@ -115,6 +124,16 @@
 
         @include mq(tablet, max) {
             padding: 50px 85px 45px 55px;
+        }
+
+        @include mq(phablet, max) {
+            padding: 20px;
+            overflow: scroll;
+        }
+
+        @include mq(phone, max) {
+            padding: 10px;
+            overflow: scroll;
         }
     }
 
@@ -154,6 +173,14 @@
 
     &__description-top {
         opacity: 0.75;
+
+        @include mq(phablet, max) {
+            margin-bottom: 0;
+        }
+
+        @include mq(phone, max) {
+            margin-bottom: 0;
+        }
     }
 
     &__btn {
@@ -173,6 +200,14 @@
         border: none;
         background: none;
         opacity: 0.4;
+
+        @include mq(phablet, max) {
+            font-size: 30px;
+        }
+
+        @include mq(phone, max) {
+            font-size: 30px;
+        }
 
     }
 

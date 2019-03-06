@@ -33,6 +33,10 @@ $(document).ready(function(){
   $('.menu__item').on('click', function() {
     menu.removeClass('modal__menu--is-active');
   });
+
+  $('#menu-close').on('click', function() {
+    menu.removeClass('modal__menu--is-active');
+  })
   // Home modal btn
 
   var homeMadalBtn = $('.js-modal-btn');

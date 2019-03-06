@@ -43,6 +43,10 @@
         &:hover {
             color: $color-white;
         }
+
+        @include mq(tablet-wide, max) {
+           width: 100%;
+        }
     }
 
     &__close-btn {
@@ -97,6 +101,11 @@
             border-bottom: 1px solid rgba($color: $color-black, $alpha: 0.4);
             
         }
+
+        &:last-child {
+            padding-top: 10px;
+            border-bottom: none;
+        }
     }
 
     &__link {
@@ -106,5 +115,15 @@
             text-decoration: none;
             color: rgba($color: $color-black, $alpha: 0.6); 
         }
+    }
+
+    &__close {
+        font-weight: 700;
+        font-size: 20px;
+        opacity: 0.6;
+        outline: none;
+        border: none;
+        background: transparent;
+        color: $color-black;
     }
 }

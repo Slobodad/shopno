@@ -60,8 +60,7 @@
         background-position: 50% 30%;
         background-repeat: no-repeat;
 
-        @include mq(phone-landscape, max) {
-            height: 100%;
+        @include mq(phone-landscape-min, max) {
             background: none;
         }
 
@@ -78,14 +77,13 @@
             padding: 28px 0 40px 40px;
         }
 
-        @include mq(phone-landscape, max) {
-            padding: 0;
-            height: 100%;
-        }
-
         @include mq(tablet, max) {
-            padding: 0 50px;
+            padding: 0 0 0 50px;
         } 
+
+        @include mq(phone-landscape-min, max) {
+            padding: 0;
+        }
         
         @include mq(phone, max) {
             padding:0 0 10px 0;
@@ -98,12 +96,16 @@
         background-color: $color-gray;
 
         @include mq(tablet-wide, max) {
-            padding: 75px 50px 90px;
+            padding: 75px 50px 60px;
         }
 
         @include mq(tablet, max) {
-            padding: 40px 25px 45px;
+            padding: 40px 25px 85px;
         } 
+
+        @include mq(phone-landscape-min, max) {
+            padding: 20px;
+        }
 
         @include mq(phone, max) {
             padding: 20px;
@@ -113,6 +115,10 @@
     &__title {
         margin-bottom: 30px;
         text-align: center; 
+
+        @include mq(phone-landscape-min, max) {
+            font-size: 16px;
+        }
     }
 
     &__title--italic {
@@ -120,12 +126,20 @@
         font-size: 15px;
         opacity: 0.95;
         color: #787878;
+
+        @include mq(phone-landscape-min, max) {
+            font-size: 14px;
+        }
     }
 
     &__description {
         margin-bottom: 30px;
         text-align: center;
         opacity: 0.7;
+
+        @include mq(phone-landscape-min, max) {
+            font-size: 15px;
+        }
     }
 }
 
@@ -160,13 +174,17 @@
         bottom: 10%;
     } 
 
-    @include mq(phone-landscape, max) {
-        display: none;
-    } 
-
     @include mq(tablet, max) {
         display: none;
     } 
+
+    @include mq(phone-landscape, max) {
+        display: none;
+    }
+
+    @include mq(phone, max) {
+        display: none;
+    }
 
 }
 
