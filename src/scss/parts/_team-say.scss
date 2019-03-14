@@ -175,17 +175,12 @@
     } 
 
     @include mq(tablet, max) {
-        display: none;
+        display: none !important;
     } 
 
     @include mq(phone-landscape, max) {
-        display: none;
+        display: none !important;
     }
-
-    @include mq(phone, max) {
-        display: none;
-    }
-
 }
 
 .slick-arrow:active {
